@@ -337,7 +337,7 @@ class EQ3BTSmartThermostat(ClimateEntity):
     @property
     def device_info(self) -> DeviceInfo:
         return DeviceInfo(
-            name=self.name,
+            name=self._name,
             manufacturer="eQ-3 AG",
             model="CC-RT-BLE-EQ",
             identifiers={(DOMAIN, self._mac)},
